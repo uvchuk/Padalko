@@ -1,0 +1,34 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	background-color: var(--prim-bcgd);
+	color: var(--prim-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

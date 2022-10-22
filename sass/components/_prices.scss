@@ -1,0 +1,68 @@
+.prices {
+	margin: 0 auto;
+	max-width: 1600px;
+	background: #111319 url(../img/prices.png);
+	&__container {
+		@extend %container;
+		@extend %section;
+	}
+
+	&__info {
+		@extend %info;
+		@extend %pre-line;
+		color: var(--quat-text);
+	}
+
+	&__title {
+		@extend %title;
+		margin-top: 20px;
+		color: var(--prim-bcgd);
+	}
+
+	&__list {
+		display: flex;
+		gap: 30px;
+		margin-top: 44px;
+	}
+
+	&__prim {
+		@extend %prices;
+		background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+	}
+
+	&__scnd {
+		@extend %prices;
+		background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.66;
+		color: var(--scnd-text);
+		&::after {
+			content: "";
+			height: 1px;
+			flex-grow: 1;
+			margin: 0 12px;
+			background-color: rgba(157, 164, 189, 0.12);
+		}
+	}
+
+	&__desc {
+	}
+
+	&__price {
+		order: 1;
+	}
+
+	&__btn {
+		@extend %btn;
+		display: block;
+		margin: 44px auto 0 auto;
+	}
+}

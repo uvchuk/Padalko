@@ -1,0 +1,99 @@
+%container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+%title {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+}
+
+%info {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+}
+
+%desc {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.66;
+}
+
+%link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--prim-bcgd);
+	&:hover,
+	&:focus {
+		color: var(--accent);
+	}
+}
+
+%btn {
+	padding: 11px 19px;
+	border: 1px solid var(--accent);
+	border-radius: 25px;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: var(--prim-bcgd);
+	background-color: transparent;
+	&:hover,
+	&:focus {
+		background-color: var(--accent);
+	}
+}
+
+%pre-line {
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: "";
+		width: 60px;
+		height: 1px;
+		margin-right: 20px;
+		background-color: currentColor;
+	}
+}
+
+%prices {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 30px 20px;
+	width: 570px;
+}
+
+%vs-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

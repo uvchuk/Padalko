@@ -1,0 +1,54 @@
+.about {
+	&__container {
+		@extend %container;
+		@extend %section;
+		display: flex;
+		gap: 30px;
+	}
+
+	&__list {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__item {
+	}
+
+	&__content {
+		width: 470px;
+	}
+
+	&__info {
+		@extend %info;
+		@extend %pre-line;
+	}
+
+	&__title {
+		@extend %title;
+		margin-top: 20px;
+	}
+
+	&__desc {
+		@extend %desc;
+		margin-top: 20px;
+		color: var(--tert-text);
+	}
+
+	&__annotation {
+		margin-top: 20px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.85;
+		color: var(--tert-text);
+	}
+
+	&__btn {
+		@extend %btn;
+		margin-top: 42px;
+		color: inherit;
+		&:hover,
+		&:focus {
+			color: var(--prim-bcgd);
+		}
+	}
+}

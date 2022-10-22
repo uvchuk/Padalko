@@ -1,0 +1,32 @@
+.footer {
+	&__container {
+		@extend %container;
+		padding-top: 56px;
+		padding-bottom: 56px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		@extend %info;
+		color: var(--scnd-text);
+	}
+
+	&__list {
+		@extend %pre-line;
+		gap: 40px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		@extend %info;
+		color: inherit;
+		&:hover,
+		&:focus {
+			color: var(--accent);
+		}
+	}
+}

@@ -1,0 +1,76 @@
+.features {
+	&__container {
+		@extend %container;
+		@extend %section;
+		display: flex;
+		justify-content: space-between;
+		padding-left: 100px;
+		padding-right: 70px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 370px;
+	}
+
+	&__item {
+		width: 170px;
+		height: 133px;
+		padding: 20px 24px;
+		background-color: var(--scnd-bcgd);
+		&:nth-child(even) {
+			margin-top: 35px;
+		}
+		&:nth-child(odd) {
+			margin-right: 30px;
+		}
+	}
+
+	&__thumb {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__numb {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.35;
+		text-align: center;
+		letter-spacing: 0.05em;
+		&-sup {
+			font-size: 16px;
+			top: -1.3em;
+			color: var(--accent);
+		}
+	}
+
+	&__label {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 1.36;
+		text-align: center;
+	}
+
+	&__content {
+		width: 500px;
+		padding-top: 10px;
+	}
+
+	&__info {
+		@extend %info;
+		@extend %pre-line;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 20px;
+	}
+
+	&__desc {
+		@extend %desc;
+		color: var(--tert-text);
+	}
+}

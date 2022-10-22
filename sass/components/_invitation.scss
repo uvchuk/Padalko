@@ -1,0 +1,95 @@
+.invitation {
+	&__container {
+		display: flex;
+		width: 1600px;
+		margin: 0 auto;
+		background-color: var(--quat-bcgd);
+	}
+}
+.booking {
+	@extend %section;
+	flex-basis: calc(100% / 2);
+	padding-left: 200px;
+
+	&__title {
+		@extend %title;
+		color: var(--prim-bcgd);
+	}
+}
+.contacts {
+	@extend %section;
+	flex-basis: calc(100% / 2);
+	padding-left: 100px;
+	padding-right: 200px;
+	background-image: url(../img/contacts.png);
+
+	&__title {
+		@extend %title;
+		margin-bottom: 40px;
+		color: var(--prim-bcgd);
+	}
+
+	&__address {
+		@extend %desc;
+		font-style: normal;
+		color: var(--scnd-text);
+	}
+
+	&__list {
+		margin-bottom: 70px;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		&:last-child {
+			text-decoration-line: underline;
+		}
+	}
+
+	&__link {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+		color: inherit;
+		&.--address {
+			font-weight: 700;
+		}
+		&:hover,
+		&:focus {
+			color: var(--accent);
+		}
+	}
+
+	&__addres-icon {
+		align-self: baseline;
+		margin-top: 6px;
+		stroke: #9da4bd;
+		.contacts__link:hover &,
+		.contacts__link:focus & {
+			stroke: var(--accent);
+		}
+	}
+
+	&__contact-icon {
+		stroke: #9da4bd;
+		.contacts__link:hover &,
+		.contacts__link:focus & {
+			stroke: var(--accent);
+		}
+	}
+
+	&__info {
+		@extend %pre-line;
+		&::before {
+			background-color: rgba(157, 164, 189, 0.4);
+		}
+		@extend %info;
+		margin-bottom: 20px;
+		color: var(--prim-bcgd);
+	}
+
+	&__desc {
+	}
+}

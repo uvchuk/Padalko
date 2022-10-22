@@ -1,0 +1,74 @@
+.hero {
+	&__container {
+		@extend %container;
+		display: flex;
+	}
+
+	&__social {
+		position: relative;
+		width: 100px;
+
+		&-list {
+			@extend %pre-line;
+			display: flex;
+			gap: 40px;
+			position: absolute;
+			bottom: 40px;
+			left: 65px;
+			transform-origin: bottom left;
+			transform: rotate(-90deg);
+		}
+
+		&-link {
+			display: block;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 1.36;
+			letter-spacing: 0.2em;
+			color: var(--prim-text);
+			&:hover,
+			&:focus {
+				color: var(--accent);
+			}
+		}
+
+		&-icon {
+			fill: currentColor;
+			.hero__social-link:hover &,
+			.hero__social-link:focus & {
+				fill: var(--accent);
+			}
+		}
+	}
+
+	&__content {
+		padding: 272px 0 208px 100px;
+		flex-grow: 1;
+		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero1.jpg);
+	}
+
+	&__info {
+		@extend %info;
+		@extend %pre-line;
+		margin-bottom: 20px;
+		color: var(--quat-text);
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 20px;
+		font-size: 72px;
+		line-height: 1.18;
+		color: var(--prim-bcgd);
+	}
+
+	&__desc {
+		max-width: 360px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.66;
+		color: var(--scnd-text);
+	}
+}
