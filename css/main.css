@@ -151,7 +151,6 @@ img {
       flex-wrap: wrap;
   gap: 20px;
   padding: 30px 20px;
-  width: 570px;
 }
 
 .gallery__title {
@@ -340,6 +339,10 @@ img {
   gap: 30px;
   margin-top: 44px;
 }
+.prices__table {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
 .prices__prim {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -458,6 +461,9 @@ img {
 
 .teammates {
   background-color: var(--scnd-bcgd);
+}
+.teammates__info {
+  margin-bottom: 20px;
 }
 .teammates__title {
   margin-bottom: 44px;

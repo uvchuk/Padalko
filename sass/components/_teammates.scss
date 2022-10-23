@@ -8,11 +8,12 @@
 	&__info {
 		@extend %pre-line;
 		@extend %info;
+		margin-bottom: 20px;
 	}
 
 	&__title {
-		margin-bottom: 44px;
 		@extend %title;
+		margin-bottom: 44px;
 	}
 
 	&__list {
