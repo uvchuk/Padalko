@@ -1,15 +1,16 @@
 .invitation {
+	background-color: var(--quat-bcgd);
+	background-image: url(../img/contacts.png);
+	background-repeat: no-repeat;
+	background-position: calc(50% + (400px - 15px / 2));
 	&__container {
 		display: flex;
-		width: 1600px;
-		margin: 0 auto;
-		background-color: var(--quat-bcgd);
+		@extend %container;
+		@extend %section;
 	}
 }
 .booking {
-	@extend %section;
 	flex-basis: calc(100% / 2);
-	padding-left: 200px;
 
 	&__title {
 		@extend %title;
@@ -17,11 +18,8 @@
 	}
 }
 .contacts {
-	@extend %section;
 	flex-basis: calc(100% / 2);
 	padding-left: 100px;
-	padding-right: 200px;
-	background-image: url(../img/contacts.png);
 
 	&__title {
 		@extend %title;

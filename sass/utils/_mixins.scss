@@ -1,3 +1,21 @@
 @mixin animation($property: color) {
 	transition: $property 250ms linear;
 }
+
+@mixin mobile {
+	@media screen and (max-width: 679px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 680px) and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 1200px) {
+		@content;
+	}
+}

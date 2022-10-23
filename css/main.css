@@ -45,15 +45,29 @@ img {
   height: auto;
 }
 
-.footer__container, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container, .hero__container, .page-header__container {
-  width: 1200px;
+.footer__container, .invitation__container, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container, .hero__container, .page-header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 679px) {
+  .footer__container, .invitation__container, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container, .hero__container, .page-header__container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 1199px) {
+  .footer__container, .invitation__container, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container, .hero__container, .page-header__container {
+    width: 680px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container, .invitation__container, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container, .hero__container, .page-header__container {
+    width: 1200px;
+  }
+}
 
-.contacts, .booking, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container {
+.invitation__container, .gallery__container, .teammates__container, .features__container, .prices__container, .about__container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -244,8 +258,11 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  width: 1200px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero1.jpg);
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero__info {
   margin-bottom: 20px;
@@ -305,9 +322,9 @@ img {
 }
 
 .prices {
-  margin: 0 auto;
-  max-width: 1600px;
   background: #111319 url(../img/prices.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .prices__info {
   color: var(--quat-text);
@@ -440,8 +457,6 @@ img {
 }
 
 .teammates {
-  width: 1600px;
-  margin: 0 auto;
   background-color: var(--scnd-bcgd);
 }
 .teammates__title {
@@ -505,19 +520,21 @@ img {
   display: flex;
   gap: 30px;
 }
+.invitation {
+  background-color: var(--quat-bcgd);
+  background-image: url(../img/contacts.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 392.5px);
+}
 .invitation__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1600px;
-  margin: 0 auto;
-  background-color: var(--quat-bcgd);
 }
 
 .booking {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 200px;
 }
 .booking__title {
   color: var(--prim-bcgd);
@@ -527,8 +544,6 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 100px;
-  padding-right: 200px;
-  background-image: url(../img/contacts.png);
 }
 .contacts__title {
   margin-bottom: 40px;
