@@ -67,7 +67,7 @@ img {
   letter-spacing: 0.05em;
 }
 
-.footer__link, .footer__info, .contacts__info, .gallery__info, .teammates__info, .features__info, .prices__info, .about__info, .hero__info {
+.footer__link, .footer__info, .contacts__info, .gallery__info, .teammates__info, .features__info, .features__label, .prices__info, .about__info, .hero__info {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -86,6 +86,8 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--prim-bcgd);
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 .page-header__contact-link:hover, .page-header__nav-link:hover, .page-header__contact-link:focus, .page-header__nav-link:focus {
   color: var(--accent);
@@ -104,6 +106,8 @@ img {
   cursor: pointer;
   color: var(--prim-bcgd);
   background-color: transparent;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .prices__btn:hover, .about__btn:hover, .page-header__contact-btn:hover, .prices__btn:focus, .about__btn:focus, .page-header__contact-btn:focus {
   background-color: var(--accent);
@@ -223,6 +227,8 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--prim-text);
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 .hero__social-link:hover, .hero__social-link:focus {
   color: var(--accent);
@@ -291,6 +297,8 @@ img {
 .about__btn {
   margin-top: 42px;
   color: inherit;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 .about__btn:hover, .about__btn:focus {
   color: var(--prim-bcgd);
@@ -413,9 +421,8 @@ img {
   color: var(--accent);
 }
 .features__label {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
+  margin-top: 6px;
+  text-transform: none;
   text-align: center;
 }
 .features__content {
@@ -482,6 +489,8 @@ img {
 }
 .teammates__soc-icon {
   display: block;
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
 }
 .teammates__soc-link:hover .teammates__soc-icon, .teammates__soc-link:focus .teammates__soc-icon {
   fill: var(--accent);
@@ -548,6 +557,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   color: inherit;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 .contacts__link.--address {
   font-weight: 700;
@@ -560,12 +571,16 @@ img {
       align-self: baseline;
   margin-top: 6px;
   stroke: #9da4bd;
+  -webkit-transition: stroke 250ms linear;
+  transition: stroke 250ms linear;
 }
 .contacts__link:hover .contacts__addres-icon, .contacts__link:focus .contacts__addres-icon {
   stroke: var(--accent);
 }
 .contacts__contact-icon {
   stroke: #9da4bd;
+  -webkit-transition: stroke 250ms linear;
+  transition: stroke 250ms linear;
 }
 .contacts__link:hover .contacts__contact-icon, .contacts__link:focus .contacts__contact-icon {
   stroke: var(--accent);
@@ -598,6 +613,8 @@ img {
 }
 .footer__link {
   color: inherit;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 .footer__link:hover, .footer__link:focus {
   color: var(--accent);

@@ -50,5 +50,6 @@
 		&:focus {
 			color: var(--prim-bcgd);
 		}
+		@include animation;
 	}
 }

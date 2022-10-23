@@ -61,6 +61,7 @@
 		}
 		&-icon {
 			display: block;
+			@include animation(fill);
 			.teammates__soc-link:hover &,
 			.teammates__soc-link:focus & {
 				fill: var(--accent);

@@ -28,5 +28,6 @@
 		&:focus {
 			color: var(--accent);
 		}
+		@include animation;
 	}
 }

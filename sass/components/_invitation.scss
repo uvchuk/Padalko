@@ -60,12 +60,14 @@
 		&:focus {
 			color: var(--accent);
 		}
+		@include animation;
 	}
 
 	&__addres-icon {
 		align-self: baseline;
 		margin-top: 6px;
 		stroke: #9da4bd;
+		@include animation(stroke);
 		.contacts__link:hover &,
 		.contacts__link:focus & {
 			stroke: var(--accent);
@@ -74,6 +76,7 @@
 
 	&__contact-icon {
 		stroke: #9da4bd;
+		@include animation(stroke);
 		.contacts__link:hover &,
 		.contacts__link:focus & {
 			stroke: var(--accent);

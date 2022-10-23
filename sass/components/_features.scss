@@ -47,9 +47,9 @@
 	}
 
 	&__label {
-		font-weight: 600;
-		font-size: 11px;
-		line-height: 1.36;
+		@extend %info;
+		margin-top: 6px;
+		text-transform: none;
 		text-align: center;
 	}
 
